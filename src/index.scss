@@ -1,0 +1,108 @@
+// Primary Colors
+$peach-pop: rgb(253, 101, 98);
+$white: rgb(255, 255, 255);
+$light-peach: rgb(255, 164, 137);
+$stone: rgb(252, 242, 232);
+$dusty-pink: rgb(247, 219, 210);
+$dark-brown: rgb(63, 13, 26);
+
+// Packaging Colors
+$pink: rgb(234, 139, 186);
+$shadow-pink: rgb(240, 193, 177);
+$lime-green: rgb(187, 227, 148);
+$green: rgb(130, 197, 163);
+$light-turquoise: rgb(133, 211, 209);
+$purple: rgb(153, 133, 186);
+
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayXXThin.ttf');
+  font-weight: 100;
+}
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayXThin.ttf');
+  font-weight: 200;
+}
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayThin.ttf');
+  font-weight: 300;
+}
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayLight.ttf');
+  font-weight: 400;
+}
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayRoman.ttf');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayMedium.ttf');
+  font-weight: 600;
+}
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayBold.ttf');
+  font-weight: 700;
+}
+@font-face {
+  font-family: 'Neue Haas';
+  src: url('assets/fonts/NeueHaasDisplayBlack.ttf');
+  font-weight: 800;
+}
+
+html, body, #root, .app {
+  overscroll-behavior-x: none;
+  font-size: 16px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  // background: black;
+}
+
+.app {
+  .menu {
+    a {
+      display: block;
+      text-decoration: none;
+      color: black;
+      padding: 1rem;
+      width: 10rem;
+      border: 1px solid black;
+      border-radius: 1rem;
+      text-align: center;
+      margin: 1rem;
+    }
+  }
+
+  :disabled {
+    opacity: .5;
+  }
+
+  button {
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+  }
+
+  h1 {
+    font-family: 'Neue Haas';
+    font-weight: 200;
+    letter-spacing: 1.5px;
+    font-size: 2.5rem;
+    // margin: 0;
+  }
+
+  h1, h2, p {
+    user-select: none;
+  }
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}

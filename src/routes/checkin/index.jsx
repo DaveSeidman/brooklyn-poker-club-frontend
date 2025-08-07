@@ -4,7 +4,7 @@ import axios from 'axios';
 import './index.scss';
 
 const Checkin = () => {
-  const backendUrl = location.origin === 'localhost' ? 'http://localhost:8000' : 'https://brooklyn-poker-club-backend.onrender.com/';
+  const backendUrl = location.origin === 'localhost' ? 'http://localhost:8000' : 'https://brooklyn-poker-club-backend.onrender.com';
   console.log(`looking for backend at: ${backendUrl}`);
 
   const nameRef = useRef();

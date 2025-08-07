@@ -1,12 +1,24 @@
 import React, { useRef, useState, useEffect } from "react";
+import axios from 'axios';
+
 import './index.scss';
 
 const Checkin = () => {
+  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  console.log(`looking for backend at: ${backendUrl}`);
+
   const nameRef = useRef();
   const phoneRef = useRef();
 
   const submit = () => {
     console.log('values', nameRef.current?.value, phoneRef.current?.value);
+    if (!nameRef.current.value || !phoneRef.current.value) return;
+
+    const name = nameRef.current.value;
+    const phone = phoneRef.current.value;
+    axios.post(`${backendUrl}/checkin`, { name, phone }).then(res => {
+      console.log('res', res)
+    })
   }
 
   return (

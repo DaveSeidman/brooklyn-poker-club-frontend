@@ -3,7 +3,7 @@ import axios from 'axios';
 import './index.scss';
 
 const Admin = () => {
-  const backendUrl = import.meta.env.VITE_BACKEND_URL;
+  const backendUrl = location.origin === 'localhost' ? 'http://localhost:8000' : 'https://brooklyn-poker-club-backend.onrender.com/';
   console.log(`looking for backend at: ${backendUrl}`);
 
   const [players, setPlayers] = useState([])

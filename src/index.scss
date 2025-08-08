@@ -1,4 +1,11 @@
 // Primary Colors
+$red: #c01c09;
+$beige: #f1e4c4;
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('assets/fonts/roboto.ttf');
+}
 
 html, body, #root, .app {
   overscroll-behavior-x: none;
@@ -7,8 +14,13 @@ html, body, #root, .app {
   height: 100%;
   overflow: hidden;
   margin: 0;
+  background: $red;
+  padding: 1rem;
 }
 
 .app {
- 
+  h1, h2, p, a{
+    color: $beige;
+    font-family: 'Roboto';
+  }
 }

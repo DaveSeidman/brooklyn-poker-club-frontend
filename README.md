@@ -6,6 +6,7 @@
 
 ### TODO
 
+- Landing page with link to checkin
 - Design
 - Protect Admin Route
 - Swap Hash Router for Browser Router

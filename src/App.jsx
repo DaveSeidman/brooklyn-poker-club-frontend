@@ -1,18 +1,21 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { HashRouter as Router, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
+import Home from './routes/home';
 import Checkin from './routes/checkin';
 import Admin from './routes/admin';
 import './index.scss';
 
-function App() {
+const App = () => {
   return (
     <div className='app'>
       <Routes>
-        <Route path="/" element={<Checkin />} />
+        <Route path="/checkin" element={<Checkin />} />
         <Route path="/admin" element={<Admin />} />
+        <Route path="/" element={<Home />} />
       </Routes>
     </div>
   );
 }
+
 
 export default App;

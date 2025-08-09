@@ -2,4 +2,24 @@
 
 .checkin {
  
+  &-form {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+
+    input, button {
+      margin: 1rem 0;
+      padding: 1rem;
+    }
+  }
+
+  &-result {
+    transition: opacity .5s, visiblity .5s;
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, .5);
+  }
 }

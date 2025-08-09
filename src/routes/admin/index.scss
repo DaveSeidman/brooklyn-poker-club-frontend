@@ -1,5 +1,29 @@
 @use '../../index.scss' as src;
 
 .admin {
-  
+  &-message {
+    textarea {
+      width: 600px;
+      height: 200px;
+      font-family: 'Roboto';
+      padding: 1rem;
+    }
+  }
+
+  &-players {
+    width: calc(100% - 4rem);
+    &-list {
+      list-style: none;
+      padding-inline-start: 0;
+      &-player {
+        line-height: 2rem;
+        border-bottom: 1px solid src.$beige;
+        color: src.$beige;
+        span {
+          display: inline-block;
+          width: 200px;
+        }
+      }
+    }
+  }
 }
